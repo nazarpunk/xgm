@@ -1,0 +1,18 @@
+include: package:flutter_lints/flutter.yaml
+
+analyzer:
+  strong-mode:
+    implicit-casts: false
+    implicit-dynamic: true
+  exclude:
+    - lib/generated/intl/**
+    - lib/generated_plugin_registrant.dart
+
+linter:
+  rules:
+    - avoid_print
+    - sort_child_properties_last
+    - sort_constructors_first
+    - sort_unnamed_constructors_first
+    - sort_pub_dependencies
+    - cascade_invocations

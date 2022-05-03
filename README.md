@@ -1,2 +1,2 @@
 # xgm
-Флаттер приложение для xgm.guru
+Флаттер приложение для [xgm.guru](https://xgm.guru).
