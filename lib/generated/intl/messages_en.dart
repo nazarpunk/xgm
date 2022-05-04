@@ -22,6 +22,37 @@ class MessageLookup extends MessageLookupByLibrary {
 
   final messages = _notInlinedMessages(_notInlinedMessages);
   static Map<String, Function> _notInlinedMessages(_) => <String, Function>{
-        "test": MessageLookupByLibrary.simpleMessage("Test EN")
+        "abilities": MessageLookupByLibrary.simpleMessage("Abilities"),
+        "abyss": MessageLookupByLibrary.simpleMessage("Abyss"),
+        "add_favorite": MessageLookupByLibrary.simpleMessage("Add favorite!"),
+        "articles": MessageLookupByLibrary.simpleMessage("Articles"),
+        "blogs": MessageLookupByLibrary.simpleMessage("Blogs"),
+        "chat": MessageLookupByLibrary.simpleMessage("Chat"),
+        "contact_us": MessageLookupByLibrary.simpleMessage("Contact us"),
+        "favorites": MessageLookupByLibrary.simpleMessage("Favorites"),
+        "followers": MessageLookupByLibrary.simpleMessage("Followers"),
+        "forum_archive": MessageLookupByLibrary.simpleMessage("Forum archive"),
+        "help": MessageLookupByLibrary.simpleMessage("Help"),
+        "home": MessageLookupByLibrary.simpleMessage("Home"),
+        "level": MessageLookupByLibrary.simpleMessage("Level"),
+        "levels_and_constants":
+            MessageLookupByLibrary.simpleMessage("Levels and constants"),
+        "my_projects": MessageLookupByLibrary.simpleMessage("My projects"),
+        "my_resources": MessageLookupByLibrary.simpleMessage("My resources"),
+        "new_project": MessageLookupByLibrary.simpleMessage("New project"),
+        "new_resource": MessageLookupByLibrary.simpleMessage(" New resource"),
+        "private_messages":
+            MessageLookupByLibrary.simpleMessage("Private messages"),
+        "profile_settings":
+            MessageLookupByLibrary.simpleMessage("Profile settings"),
+        "projects": MessageLookupByLibrary.simpleMessage("Projects"),
+        "qa": MessageLookupByLibrary.simpleMessage("Q/A"),
+        "resources": MessageLookupByLibrary.simpleMessage("Resources"),
+        "sign_out": MessageLookupByLibrary.simpleMessage("Sign out"),
+        "site_rules": MessageLookupByLibrary.simpleMessage("Site rules"),
+        "start_blog": MessageLookupByLibrary.simpleMessage("Start a blog"),
+        "tasks": MessageLookupByLibrary.simpleMessage("Tasks"),
+        "tech_support": MessageLookupByLibrary.simpleMessage("Tech support"),
+        "users": MessageLookupByLibrary.simpleMessage("Users")
       };
 }

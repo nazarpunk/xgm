@@ -1,8 +1,13 @@
 import 'package:flutter/material.dart';
-import 'package:xgm/widget/language_icon_button.dart';
+import 'package:xgm/widget/navigation/add_new_icon_button.dart';
+import 'package:xgm/widget/navigation/main_drawer.dart';
+import 'package:xgm/widget/navigation/language_icon_button.dart';
+import 'package:xgm/widget/navigation/user_drawer.dart';
+import 'package:xgm/widget/navigation/user_drawer_icon_button.dart';
 
 import '../generated/l10n.dart';
-import '../widget/theme_icon_button.dart';
+import '../widget/navigation/theme_icon_button.dart';
+import '../widget/spotlight.dart';
 import 'profile.dart';
 
 class ScreenHome extends StatefulWidget {
@@ -22,8 +27,10 @@ class _ScreenHomeState extends State<ScreenHome> {
         actions: [
           const LanguageIconButton(),
           const ThemeIconButton(),
+          const UserDrawerIconButton(),
           IconButton(
-            icon: const Icon(Icons.person),
+            icon: const Icon(Icons.search),
+            tooltip: s.add_favorite,
             onPressed: () {
               Navigator.push(
                 context,
@@ -31,71 +38,18 @@ class _ScreenHomeState extends State<ScreenHome> {
               );
             },
           ),
-          IconButton(
-            icon: const Icon(Icons.search),
-            tooltip: s.test,
-            onPressed: () {
-              ScaffoldMessenger.of(context).showSnackBar(
-                SnackBar(content: Text(s.test)),
-              );
-            },
-          ),
-          IconButton(
-            icon: const Icon(Icons.add),
-            tooltip: 'Show Snackbar',
-            onPressed: () {
-              ScaffoldMessenger.of(context).showSnackBar(
-                SnackBar(content: Text(s.test)),
-              );
-            },
-          ),
+          const AddNewMenuButton(),
         ],
       ),
-      drawer: Drawer(
-        child: ListView(
-          padding: EdgeInsets.zero,
-          children: [
-            DrawerHeader(
-              child: Text(s.test),
-            ),
-            ListTile(
-              title: const Text('Item 1'),
-              onTap: () {
-                // Update the state of the app.
-                // ...
-              },
-            ),
-            ListTile(
-              title: const Text('Item 2'),
-              onTap: () {
-                // Update the state of the app.
-                // ...
-              },
-            ),
-          ],
-        ),
-      ),
-      body: Center(
-        child: Column(
-          children: [
-            Expanded(
-              child: ListView.builder(
-                itemBuilder: (context, position) {
-                  return Card(
-                    child: Padding(
-                      padding: const EdgeInsets.all(16.0),
-                      child: Text(
-                        '${S.of(context).test}  ${position.toString()}',
-                        style: const TextStyle(fontSize: 22.0),
-                      ),
-                    ),
-                  );
-                },
-                itemCount: 50,
-              ),
-            ),
-          ],
-        ),
+      drawer: const MainDrawer(),
+      endDrawer: const UserDrawer(),
+      body: ListView(
+        padding: EdgeInsets.zero,
+        children: const [
+          SizedBox(height: 8),
+          Spotlight(),
+          Divider(),
+        ],
       ),
     );
   }

@@ -10,6 +10,7 @@ import 'utils/language_notifier.dart';
 import 'utils/theme_notifier.dart';
 
 void main() {
+  //WidgetsFlutterBinding.ensureInitialized();
   runApp(const MyApp());
 }
 
@@ -24,8 +25,7 @@ class MyApp extends StatelessWidget {
           builder: (context) => ChangeNotifierProvider(
             create: (_) => ThemeNotifier(),
             child: Consumer<ThemeNotifier>(
-              builder: (context, ThemeNotifier themeNotifier, child) =>
-                  MaterialApp(
+              builder: (context, themeNotifier, child) => MaterialApp(
                 debugShowCheckedModeBanner: false,
                 title: 'xgm.guru',
                 scrollBehavior: _MaterialScrollBehavior(),

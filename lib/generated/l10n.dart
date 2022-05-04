@@ -50,11 +50,291 @@ class S {
     return Localizations.of<S>(context, S);
   }
 
-  /// `Тест РУ`
-  String get test {
+  /// `Способности`
+  String get abilities {
     return Intl.message(
-      'Тест РУ',
-      name: 'test',
+      'Способности',
+      name: 'abilities',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Бездна`
+  String get abyss {
+    return Intl.message(
+      'Бездна',
+      name: 'abyss',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `В избранное!`
+  String get add_favorite {
+    return Intl.message(
+      'В избранное!',
+      name: 'add_favorite',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Статьи`
+  String get articles {
+    return Intl.message(
+      'Статьи',
+      name: 'articles',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Блоги`
+  String get blogs {
+    return Intl.message(
+      'Блоги',
+      name: 'blogs',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Чат`
+  String get chat {
+    return Intl.message(
+      'Чат',
+      name: 'chat',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Связаться с нами`
+  String get contact_us {
+    return Intl.message(
+      'Связаться с нами',
+      name: 'contact_us',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Избранное`
+  String get favorites {
+    return Intl.message(
+      'Избранное',
+      name: 'favorites',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Фолловеры`
+  String get followers {
+    return Intl.message(
+      'Фолловеры',
+      name: 'followers',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Архив форума`
+  String get forum_archive {
+    return Intl.message(
+      'Архив форума',
+      name: 'forum_archive',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Справка`
+  String get help {
+    return Intl.message(
+      'Справка',
+      name: 'help',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Главная`
+  String get home {
+    return Intl.message(
+      'Главная',
+      name: 'home',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Уровень`
+  String get level {
+    return Intl.message(
+      'Уровень',
+      name: 'level',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Уровни и константы`
+  String get levels_and_constants {
+    return Intl.message(
+      'Уровни и константы',
+      name: 'levels_and_constants',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Мои проекты`
+  String get my_projects {
+    return Intl.message(
+      'Мои проекты',
+      name: 'my_projects',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Мои ресурсы`
+  String get my_resources {
+    return Intl.message(
+      'Мои ресурсы',
+      name: 'my_resources',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Новый проект`
+  String get new_project {
+    return Intl.message(
+      'Новый проект',
+      name: 'new_project',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Новый ресурс`
+  String get new_resource {
+    return Intl.message(
+      'Новый ресурс',
+      name: 'new_resource',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Сообщения`
+  String get private_messages {
+    return Intl.message(
+      'Сообщения',
+      name: 'private_messages',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Настройки профиля`
+  String get profile_settings {
+    return Intl.message(
+      'Настройки профиля',
+      name: 'profile_settings',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Проекты`
+  String get projects {
+    return Intl.message(
+      'Проекты',
+      name: 'projects',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Вопросы`
+  String get qa {
+    return Intl.message(
+      'Вопросы',
+      name: 'qa',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Ресурсы`
+  String get resources {
+    return Intl.message(
+      'Ресурсы',
+      name: 'resources',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Выйти`
+  String get sign_out {
+    return Intl.message(
+      'Выйти',
+      name: 'sign_out',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Правила сайты`
+  String get site_rules {
+    return Intl.message(
+      'Правила сайты',
+      name: 'site_rules',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Начать блог`
+  String get start_blog {
+    return Intl.message(
+      'Начать блог',
+      name: 'start_blog',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Задания`
+  String get tasks {
+    return Intl.message(
+      'Задания',
+      name: 'tasks',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Тех. поддержка`
+  String get tech_support {
+    return Intl.message(
+      'Тех. поддержка',
+      name: 'tech_support',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Пользователи`
+  String get users {
+    return Intl.message(
+      'Пользователи',
+      name: 'users',
       desc: '',
       args: [],
     );
